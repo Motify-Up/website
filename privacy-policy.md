@@ -1,3 +1,5 @@
+# Privacy Policy
+
 Welcome to Motify Up (the “App”), operated by us (“we,” “our,” or “us”). This privacy policy explains how your data is collected, used, and protected when you use the App.
 
 ## Information We Collect
