@@ -8,6 +8,9 @@ function t(key: string, locale: string = 'en') {
       'navigation.features': 'Features',
       'navigation.gallery': 'Gallery',
       'navigation.download': 'Download',
+      'navigation.procrastination': 'Procrastination',
+      'navigation.blog': 'Blog',
+      'navigation.app': 'App',
       'hero.title': 'Stay Focused.',
       'hero.subtitle': 'Stay Motivated.',
       'hero.description': "Your journey to achieving more starts with MotifyUp. Transform your family's motivation and track progress together with our innovative goal-tracking app.",
@@ -37,6 +40,9 @@ function t(key: string, locale: string = 'en') {
       'navigation.features': '功能',
       'navigation.gallery': '图库',
       'navigation.download': '下载',
+      'navigation.procrastination': '克服拖延症',
+      'navigation.blog': '博客',
+      'navigation.app': '应用',
       'hero.title': '保持专注',
       'hero.subtitle': '保持动力',
       'hero.description': '您的成就之旅从 MotifyUp 开始。通过我们创新的目标跟踪应用，改变您家庭的动力并一起跟踪进度。',
@@ -66,6 +72,9 @@ function t(key: string, locale: string = 'en') {
       'navigation.features': 'Características',
       'navigation.gallery': 'Galería',
       'navigation.download': 'Descargar',
+      'navigation.procrastination': 'Procrastinación',
+      'navigation.blog': 'Blog',
+      'navigation.app': 'App',
       'hero.title': 'Mantén el Enfoque.',
       'hero.subtitle': 'Mantén la Motivación.',
       'hero.description': 'Tu viaje para lograr más comienza con MotifyUp. Transforma la motivación de tu familia y rastrea el progreso juntos con nuestra innovadora aplicación de seguimiento de objetivos.',
@@ -95,6 +104,9 @@ function t(key: string, locale: string = 'en') {
       'navigation.features': 'Fonctionnalités',
       'navigation.gallery': 'Galerie',
       'navigation.download': 'Télécharger',
+      'navigation.procrastination': 'Procrastination',
+      'navigation.blog': 'Blog',
+      'navigation.app': 'App',
       'hero.title': 'Restez Concentré.',
       'hero.subtitle': 'Restez Motivé.',
       'hero.description': 'Votre voyage vers plus de réalisations commence avec MotifyUp. Transformez la motivation de votre famille et suivez les progrès ensemble avec notre application innovante de suivi d\'objectifs.',
@@ -124,6 +136,9 @@ function t(key: string, locale: string = 'en') {
       'navigation.features': 'Funktionen',
       'navigation.gallery': 'Galerie',
       'navigation.download': 'Herunterladen',
+      'navigation.procrastination': 'Prokrastination',
+      'navigation.blog': 'Blog',
+      'navigation.app': 'App',
       'hero.title': 'Bleib Fokussiert.',
       'hero.subtitle': 'Bleib Motiviert.',
       'hero.description': 'Deine Reise zu mehr Erfolg beginnt mit MotifyUp. Transformiere die Motivation deiner Familie und verfolge gemeinsam den Fortschritt mit unserer innovativen Zielverfolgungs-App.',
@@ -207,9 +222,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       <Navbar
-        featuresLabel={t('navigation.features', locale)}
-        galleryLabel={t('navigation.gallery', locale)}
-        downloadLabel={t('navigation.download', locale)}
+        appLabel={t('navigation.app', locale)}
+        blogLabel={t('navigation.blog', locale)}
         currentLocale={locale}
       />
 
@@ -259,7 +273,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('features.title', locale)}</h2>
@@ -297,7 +311,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      <section id="screenshots" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="screenshots" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('gallery.title', locale)}</h2>
@@ -330,7 +344,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-white scroll-mt-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">{t('download.title', locale)}</h2>
           <p className="text-xl text-gray-600 mb-8">{t('download.subtitle', locale)}</p>
@@ -386,6 +400,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </a>
                 </li>
                 <li>
+                  <a href={`/${locale}/blog`} className="text-gray-400 hover:text-white transition-colors">
+                    {t('navigation.blog', locale)}
+                  </a>
+                </li>
+                <li>
+                  <a href={`/${locale}/procrastination`} className="text-gray-400 hover:text-white transition-colors">
+                    {t('navigation.procrastination', locale)}
+                  </a>
+                </li>
+                <li>
                   <a href="#download" className="text-gray-400 hover:text-white transition-colors">
                     {t('navigation.download', locale)}
                   </a>
@@ -403,6 +427,44 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </div>
       </footer>
+      {/* Floating right-side anchor for section shortcuts */}
+      <nav className="hidden md:flex fixed right-6 top-1/3 z-40">
+        <div className="flex flex-col gap-2 rounded-2xl border border-green-100 bg-white/70 backdrop-blur-md shadow-lg p-2">
+          <a
+            href="#features"
+            className="group flex items-center gap-2 px-3 py-2 rounded-xl text-gray-700 hover:text-green-700 hover:bg-green-50 transition-colors"
+            title={t('navigation.features', locale)}
+            aria-label={t('navigation.features', locale)}
+          >
+            <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-sm font-medium">{t('navigation.features', locale)}</span>
+          </a>
+          <a
+            href="#screenshots"
+            className="group flex items-center gap-2 px-3 py-2 rounded-xl text-gray-700 hover:text-green-700 hover:bg-green-50 transition-colors"
+            title={t('navigation.gallery', locale)}
+            aria-label={t('navigation.gallery', locale)}
+          >
+            <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1-1a2 2 0 012.828 0L20 15m-6-9h6a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h6" />
+            </svg>
+            <span className="text-sm font-medium">{t('navigation.gallery', locale)}</span>
+          </a>
+          <a
+            href="#download"
+            className="group flex items-center gap-2 px-3 py-2 rounded-xl text-gray-700 hover:text-green-700 hover:bg-green-50 transition-colors"
+            title={t('navigation.download', locale)}
+            aria-label={t('navigation.download', locale)}
+          >
+            <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-7 2h14v2H5v-2z" />
+            </svg>
+            <span className="text-sm font-medium">{t('navigation.download', locale)}</span>
+          </a>
+        </div>
+      </nav>
     </div>
   );
 }

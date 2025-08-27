@@ -4,16 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 
 type NavbarProps = {
-  featuresLabel: string;
-  galleryLabel: string;
-  downloadLabel: string;
+  appLabel: string;
+  blogLabel: string;
   currentLocale: string;
 };
 
 export default function Navbar({
-  featuresLabel,
-  galleryLabel,
-  downloadLabel,
+  appLabel,
+  blogLabel,
   currentLocale
 }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +28,7 @@ export default function Navbar({
     <nav className="bg-white/80 backdrop-blur-md border-b border-green-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="flex items-center space-x-3">
+          <a href={`/${currentLocale}`} className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
               <Image
                 src="/app-icon.svg"
@@ -45,14 +43,11 @@ export default function Navbar({
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors">
-              {featuresLabel}
+            <a href={`/${currentLocale}`} className="text-gray-700 hover:text-green-600 transition-colors">
+              {appLabel}
             </a>
-            <a href="#screenshots" className="text-gray-700 hover:text-green-600 transition-colors">
-              {galleryLabel}
-            </a>
-            <a href="#download" className="text-gray-700 hover:text-green-600 transition-colors">
-              {downloadLabel}
+            <a href={`/${currentLocale}/blog`} className="text-gray-700 hover:text-green-600 transition-colors">
+              {blogLabel}
             </a>
             <div className="relative group">
               <button className="flex items-center space-x-2 text-gray-700 hover:text-green-600 transition-colors px-3 py-2 rounded-lg hover:bg-gray-50">
@@ -109,14 +104,11 @@ export default function Navbar({
       {isOpen && (
         <div className="md:hidden border-t border-green-100 bg-white">
           <div className="px-4 py-3 space-y-2">
-            <a href="#features" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">
-              {featuresLabel}
+            <a href={`/${currentLocale}`} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50" onClick={() => setIsOpen(false)}>
+              {appLabel}
             </a>
-            <a href="#screenshots" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">
-              {galleryLabel}
-            </a>
-            <a href="#download" className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">
-              {downloadLabel}
+            <a href={`/${currentLocale}/blog`} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50" onClick={() => setIsOpen(false)}>
+              {blogLabel}
             </a>
             <div className="pt-2 border-t border-gray-100">
               <div className="grid grid-cols-2 gap-2">
