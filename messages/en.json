@@ -1,0 +1,57 @@
+{
+  "navigation": {
+    "features": "Features",
+    "gallery": "Gallery",
+    "download": "Download"
+  },
+  "hero": {
+    "tagline": "Stay Focused. Stay Motivated.",
+    "description": "Your journey to achieving more starts with MotifyUp. Transform your family's motivation and track progress together with our innovative goal-tracking app.",
+    "downloadButton": "Download on App Store",
+    "rating": "5.0",
+    "ratingsCount": "(2 Ratings)"
+  },
+  "features": {
+    "title": "Why Choose MotifyUp?",
+    "subtitle": "Designed to help families stay motivated and achieve their goals together",
+    "familyMembers": {
+      "title": "For Every Family Member",
+      "description": "Create individual profiles for each family member and track their unique goals and progress separately."
+    },
+    "dailyProgress": {
+      "title": "Track Progress Daily",
+      "description": "Monitor daily achievements with visual progress indicators, earned stars, and task completion tracking."
+    },
+    "journeys": {
+      "title": "Complete Your Journeys",
+      "description": "Set long-term goals and track completion rates across different categories like reading, fitness, and creativity."
+    }
+  },
+  "gallery": {
+    "title": "App Gallery",
+    "subtitle": "Beautiful, intuitive interface designed for the whole family"
+  },
+  "download": {
+    "title": "Ready to Transform Your Family's Motivation?",
+    "subtitle": "Join thousands of families who are already achieving their goals with MotifyUp",
+    "appStore": {
+      "smallText": "Download on the",
+      "largeText": "App Store"
+    },
+    "freeText": "Free to download"
+  },
+  "footer": {
+    "description": "Motivate to achieve goals. Transform your family's motivation with our innovative goal-tracking app.",
+    "quickLinks": "Quick Links",
+    "developer": "Developer",
+    "designedFor": "Designed for iPad and iPhone",
+    "copyright": "© {year} MetaLeap LLC. All rights reserved."
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  }
+} 

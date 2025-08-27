@@ -1,0 +1,57 @@
+{
+  "navigation": {
+    "features": "Funktionen",
+    "gallery": "Galerie",
+    "download": "Herunterladen"
+  },
+  "hero": {
+    "tagline": "Bleib Fokussiert. Bleib Motiviert.",
+    "description": "Deine Reise zu mehr Erfolg beginnt mit MotifyUp. Transformiere die Motivation deiner Familie und verfolge gemeinsam den Fortschritt mit unserer innovativen Zielverfolgungs-App.",
+    "downloadButton": "Im App Store herunterladen",
+    "rating": "5.0",
+    "ratingsCount": "(2 Bewertungen)"
+  },
+  "features": {
+    "title": "Warum MotifyUp wählen?",
+    "subtitle": "Entwickelt, um Familien dabei zu helfen, motiviert zu bleiben und ihre Ziele gemeinsam zu erreichen",
+    "familyMembers": {
+      "title": "Für jedes Familienmitglied",
+      "description": "Erstelle individuelle Profile für jedes Familienmitglied und verfolge ihre einzigartigen Ziele und Fortschritte separat."
+    },
+    "dailyProgress": {
+      "title": "Verfolge den täglichen Fortschritt",
+      "description": "Überwache tägliche Erfolge mit visuellen Fortschrittsindikatoren, verdienten Sternen und der Verfolgung der Aufgabenabschlüsse."
+    },
+    "journeys": {
+      "title": "Vervollständige deine Reisen",
+      "description": "Setze langfristige Ziele und verfolge Abschlussraten in verschiedenen Kategorien wie Lesen, Fitness und Kreativität."
+    }
+  },
+  "gallery": {
+    "title": "App-Galerie",
+    "subtitle": "Schöne, intuitive Benutzeroberfläche, die für die ganze Familie entwickelt wurde"
+  },
+  "download": {
+    "title": "Bereit, die Motivation deiner Familie zu transformieren?",
+    "subtitle": "Schließe dich Tausenden von Familien an, die bereits ihre Ziele mit MotifyUp erreichen",
+    "appStore": {
+      "smallText": "Herunterladen im",
+      "largeText": "App Store"
+    },
+    "freeText": "Kostenlos herunterladen"
+  },
+  "footer": {
+    "description": "Motiviere, um Ziele zu erreichen. Transformiere die Motivation deiner Familie mit unserer innovativen Zielverfolgungs-App.",
+    "quickLinks": "Schnelllinks",
+    "developer": "Entwickler",
+    "designedFor": "Entwickelt für iPad und iPhone",
+    "copyright": "© {year} MetaLeap LLC. Alle Rechte vorbehalten."
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  }
+} 

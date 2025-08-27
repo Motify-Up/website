@@ -1,0 +1,57 @@
+{
+  "navigation": {
+    "features": "Características",
+    "gallery": "Galería",
+    "download": "Descargar"
+  },
+  "hero": {
+    "tagline": "Mantén el Enfoque. Mantén la Motivación.",
+    "description": "Tu viaje para lograr más comienza con MotifyUp. Transforma la motivación de tu familia y rastrea el progreso juntos con nuestra innovadora aplicación de seguimiento de objetivos.",
+    "downloadButton": "Descargar en App Store",
+    "rating": "5.0",
+    "ratingsCount": "(2 Calificaciones)"
+  },
+  "features": {
+    "title": "¿Por qué elegir MotifyUp?",
+    "subtitle": "Diseñado para ayudar a las familias a mantenerse motivadas y lograr sus objetivos juntos",
+    "familyMembers": {
+      "title": "Para cada miembro de la familia",
+      "description": "Crea perfiles individuales para cada miembro de la familia y rastrea sus objetivos únicos y progreso por separado."
+    },
+    "dailyProgress": {
+      "title": "Rastrea el progreso diario",
+      "description": "Monitorea los logros diarios con indicadores de progreso visual, estrellas ganadas y seguimiento de finalización de tareas."
+    },
+    "journeys": {
+      "title": "Completa tus viajes",
+      "description": "Establece objetivos a largo plazo y rastrea las tasas de finalización en diferentes categorías como lectura, fitness y creatividad."
+    }
+  },
+  "gallery": {
+    "title": "Galería de la App",
+    "subtitle": "Interfaz hermosa e intuitiva diseñada para toda la familia"
+  },
+  "download": {
+    "title": "¿Listo para transformar la motivación de tu familia?",
+    "subtitle": "Únete a miles de familias que ya están logrando sus objetivos con MotifyUp",
+    "appStore": {
+      "smallText": "Descarga en",
+      "largeText": "App Store"
+    },
+    "freeText": "Descarga gratuita"
+  },
+  "footer": {
+    "description": "Motiva para lograr objetivos. Transforma la motivación de tu familia con nuestra innovadora aplicación de seguimiento de objetivos.",
+    "quickLinks": "Enlaces rápidos",
+    "developer": "Desarrollador",
+    "designedFor": "Diseñado para iPad e iPhone",
+    "copyright": "© {year} MetaLeap LLC. Todos los derechos reservados."
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  }
+} 

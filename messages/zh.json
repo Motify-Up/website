@@ -1,0 +1,57 @@
+{
+  "navigation": {
+    "features": "功能特色",
+    "gallery": "应用展示",
+    "download": "下载"
+  },
+  "hero": {
+    "tagline": "保持专注。保持动力。",
+    "description": "您的成功之旅从 MotifyUp 开始。通过我们创新的目标追踪应用，转变您家庭的动力，一起追踪进步。",
+    "downloadButton": "在 App Store 下载",
+    "rating": "5.0",
+    "ratingsCount": "（2个评分）"
+  },
+  "features": {
+    "title": "为什么选择 MotifyUp？",
+    "subtitle": "专为帮助家庭保持动力并共同实现目标而设计",
+    "familyMembers": {
+      "title": "为每个家庭成员",
+      "description": "为每个家庭成员创建个人档案，分别追踪他们独特的目标和进步。"
+    },
+    "dailyProgress": {
+      "title": "每日追踪进步",
+      "description": "通过视觉进度指示器、获得的星星和任务完成追踪来监控每日成就。"
+    },
+    "journeys": {
+      "title": "完成您的旅程",
+      "description": "设定长期目标，追踪阅读、健身和创造力等不同类别的完成率。"
+    }
+  },
+  "gallery": {
+    "title": "应用展示",
+    "subtitle": "专为整个家庭设计的美丽、直观界面"
+  },
+  "download": {
+    "title": "准备转变您家庭的动力了吗？",
+    "subtitle": "加入已经通过 MotifyUp 实现目标的数千个家庭",
+    "appStore": {
+      "smallText": "在",
+      "largeText": "App Store 下载"
+    },
+    "freeText": "免费下载"
+  },
+  "footer": {
+    "description": "激励实现目标。通过我们创新的目标追踪应用转变您家庭的动力。",
+    "quickLinks": "快速链接",
+    "developer": "开发者",
+    "designedFor": "专为 iPad 和 iPhone 设计",
+    "copyright": "© {year} MetaLeap LLC。保留所有权利。"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  }
+} 

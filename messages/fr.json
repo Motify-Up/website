@@ -1,0 +1,57 @@
+{
+  "navigation": {
+    "features": "Fonctionnalités",
+    "gallery": "Galerie",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "tagline": "Restez Concentré. Restez Motivé.",
+    "description": "Votre voyage vers la réussite commence avec MotifyUp. Transformez la motivation de votre famille et suivez les progrès ensemble avec notre application innovante de suivi d'objectifs.",
+    "downloadButton": "Télécharger sur l'App Store",
+    "rating": "5.0",
+    "ratingsCount": "(2 Évaluations)"
+  },
+  "features": {
+    "title": "Pourquoi choisir MotifyUp ?",
+    "subtitle": "Conçu pour aider les familles à rester motivées et atteindre leurs objectifs ensemble",
+    "familyMembers": {
+      "title": "Pour chaque membre de la famille",
+      "description": "Créez des profils individuels pour chaque membre de la famille et suivez leurs objectifs uniques et leurs progrès séparément."
+    },
+    "dailyProgress": {
+      "title": "Suivez les progrès quotidiens",
+      "description": "Surveillez les réalisations quotidiennes avec des indicateurs de progrès visuels, des étoiles gagnées et le suivi de l'achèvement des tâches."
+    },
+    "journeys": {
+      "title": "Complétez vos parcours",
+      "description": "Définissez des objectifs à long terme et suivez les taux de réussite dans différentes catégories comme la lecture, la forme physique et la créativité."
+    }
+  },
+  "gallery": {
+    "title": "Galerie de l'App",
+    "subtitle": "Interface belle et intuitive conçue pour toute la famille"
+  },
+  "download": {
+    "title": "Prêt à transformer la motivation de votre famille ?",
+    "subtitle": "Rejoignez des milliers de familles qui atteignent déjà leurs objectifs avec MotifyUp",
+    "appStore": {
+      "smallText": "Téléchargez sur",
+      "largeText": "l'App Store"
+    },
+    "freeText": "Téléchargement gratuit"
+  },
+  "footer": {
+    "description": "Motivez pour atteindre les objectifs. Transformez la motivation de votre famille avec notre application innovante de suivi d'objectifs.",
+    "quickLinks": "Liens rapides",
+    "developer": "Développeur",
+    "designedFor": "Conçu pour iPad et iPhone",
+    "copyright": "© {year} MetaLeap LLC. Tous droits réservés."
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch"
+  }
+} 
