@@ -9,7 +9,10 @@ export default createMiddleware({
   defaultLocale: defaultLocale,
   
   // Always show the locale in the URL
-  localePrefix: 'always'
+  localePrefix: 'always',
+  
+  // Disable automatic locale detection based on browser preferences
+  localeDetection: false
 });
 
 export const config = {

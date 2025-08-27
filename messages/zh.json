@@ -45,7 +45,10 @@
     "quickLinks": "快速链接",
     "developer": "开发者",
     "designedFor": "专为 iPad 和 iPhone 设计",
-    "copyright": "© {year} MetaLeap LLC。保留所有权利。"
+    "copyright": "© {year} MetaLeap LLC。保留所有权利。",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
   },
   "languages": {
     "en": "English",

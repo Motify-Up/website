@@ -45,7 +45,10 @@
     "quickLinks": "Schnelllinks",
     "developer": "Entwickler",
     "designedFor": "Entwickelt für iPad und iPhone",
-    "copyright": "© {year} MetaLeap LLC. Alle Rechte vorbehalten."
+    "copyright": "© {year} MetaLeap LLC. Alle Rechte vorbehalten.",
+    "legal": "Rechtliches",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen"
   },
   "languages": {
     "en": "English",

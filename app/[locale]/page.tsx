@@ -34,7 +34,10 @@ function t(key: string, locale: string = 'en') {
       'footer.quickLinks': 'Quick Links',
       'footer.developer': 'Developer',
       'footer.copyright': '© 2025 MetaLeap LLC. All rights reserved.',
-      'footer.designedFor': 'Designed for iPad and iPhone'
+      'footer.designedFor': 'Designed for iPad and iPhone',
+      'footer.legal': 'Legal',
+      'footer.privacyPolicy': 'Privacy Policy',
+      'footer.termsOfService': 'Terms of Service'
     },
     zh: {
       'navigation.features': '功能',
@@ -66,7 +69,10 @@ function t(key: string, locale: string = 'en') {
       'footer.quickLinks': '快速链接',
       'footer.developer': '开发者',
       'footer.copyright': '© 2025 MetaLeap LLC。保留所有权利。',
-      'footer.designedFor': '专为 iPad 和 iPhone 设计'
+      'footer.designedFor': '专为 iPad 和 iPhone 设计',
+      'footer.legal': '法律',
+      'footer.privacyPolicy': '隐私政策',
+      'footer.termsOfService': '服务条款'
     },
     es: {
       'navigation.features': 'Características',
@@ -98,7 +104,10 @@ function t(key: string, locale: string = 'en') {
       'footer.quickLinks': 'Enlaces Rápidos',
       'footer.developer': 'Desarrollador',
       'footer.copyright': '© 2025 MetaLeap LLC. Todos los derechos reservados.',
-      'footer.designedFor': 'Diseñado para iPad e iPhone'
+      'footer.designedFor': 'Diseñado para iPad e iPhone',
+      'footer.legal': 'Legal',
+      'footer.privacyPolicy': 'Política de Privacidad',
+      'footer.termsOfService': 'Términos de Servicio'
     },
     fr: {
       'navigation.features': 'Fonctionnalités',
@@ -130,7 +139,10 @@ function t(key: string, locale: string = 'en') {
       'footer.quickLinks': 'Liens Rapides',
       'footer.developer': 'Développeur',
       'footer.copyright': '© 2025 MetaLeap LLC. Tous droits réservés.',
-      'footer.designedFor': 'Conçu pour iPad et iPhone'
+      'footer.designedFor': 'Conçu pour iPad et iPhone',
+      'footer.legal': 'Mentions légales',
+      'footer.privacyPolicy': 'Politique de Confidentialité',
+      'footer.termsOfService': 'Conditions d\'Utilisation'
     },
     de: {
       'navigation.features': 'Funktionen',
@@ -162,7 +174,10 @@ function t(key: string, locale: string = 'en') {
       'footer.quickLinks': 'Schnelllinks',
       'footer.developer': 'Entwickler',
       'footer.copyright': '© 2025 MetaLeap LLC. Alle Rechte vorbehalten.',
-      'footer.designedFor': 'Entwickelt für iPad und iPhone'
+      'footer.designedFor': 'Entwickelt für iPad und iPhone',
+      'footer.legal': 'Rechtliches',
+      'footer.privacyPolicy': 'Datenschutzrichtlinie',
+      'footer.termsOfService': 'Nutzungsbedingungen'
     }
   };
 
@@ -417,8 +432,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <p className="text-gray-400 text-sm">{t('footer.designedFor', locale)}</p>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">{t('footer.copyright', locale)}</p>
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 mb-4 md:mb-0">{t('footer.copyright', locale)}</p>
+              <div className="flex items-center space-x-6 text-sm">
+                <a href={`/${locale}/privacy-policy`} className="text-gray-400 hover:text-white transition-colors">
+                  {t('footer.privacyPolicy', locale)}
+                </a>
+                <a href={`/${locale}/terms-of-service`} className="text-gray-400 hover:text-white transition-colors">
+                  {t('footer.termsOfService', locale)}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
