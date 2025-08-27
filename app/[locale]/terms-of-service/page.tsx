@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -75,19 +75,7 @@ function t(key: string, locale: string = 'en') {
       'contact.description': 'If you have any questions about these Terms of Service, please contact us at:',
       'backToHome': 'Back to Home',
       'appLabel': 'App',
-      'blogLabel': 'Blog',
-      'footer.tagline': 'Motivate to achieve goals. Transform your family\'s motivation with our innovative goal-tracking app.',
-      'footer.quickLinks': 'Quick Links',
-      'footer.developer': 'Developer',
-      'footer.designedFor': 'Designed for iPad and iPhone',
-      'footer.copyright': '© 2025 MetaLeap LLC. All rights reserved.',
-      'footer.legal': 'Legal',
-      'footer.privacyPolicy': 'Privacy Policy',
-      'footer.termsOfService': 'Terms of Service',
-      'navigation.features': 'Features',
-      'navigation.gallery': 'Gallery',
-      'navigation.blog': 'Blog',
-      'navigation.download': 'Download'
+      'blogLabel': 'Blog'
     },
     zh: {
       'title': '服务条款',
@@ -135,19 +123,7 @@ function t(key: string, locale: string = 'en') {
       'contact.description': '如果您对这些服务条款有任何问题，请联系我们：',
       'backToHome': '返回首页',
       'appLabel': '应用',
-      'blogLabel': '博客',
-      'footer.tagline': '激励实现目标。通过我们创新的目标追踪应用转变您家庭的动力。',
-      'footer.quickLinks': '快速链接',
-      'footer.developer': '开发者',
-      'footer.designedFor': '专为 iPad 和 iPhone 设计',
-      'footer.copyright': '© 2025 MetaLeap LLC。保留所有权利。',
-      'footer.legal': '法律',
-      'footer.privacyPolicy': '隐私政策',
-      'footer.termsOfService': '服务条款',
-      'navigation.features': '功能',
-      'navigation.gallery': '图库',
-      'navigation.blog': '博客',
-      'navigation.download': '下载'
+      'blogLabel': '博客'
     },
     es: {
       'title': 'Términos de Servicio',
@@ -497,71 +473,7 @@ export default async function TermsOfService({ params }: { params: Promise<{ loc
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
-                  <Image
-                    src="/app-icon.svg"
-                    alt="MotifyUp App Icon"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
-                  />
-                </div>
-                <span className="text-2xl font-bold">MotifyUp</span>
-              </div>
-              <p className="text-gray-400">{t('footer.tagline', locale)}</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks', locale)}</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href={`/${locale}#features`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.features', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href={`/${locale}#screenshots`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.gallery', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href={`/${locale}/blog`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.blog', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href={`/${locale}#download`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.download', locale)}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('footer.developer', locale)}</h3>
-              <p className="text-gray-400 mb-2">MetaLeap LLC</p>
-              <p className="text-gray-400 text-sm">{t('footer.designedFor', locale)}</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 mb-4 md:mb-0">{t('footer.copyright', locale)}</p>
-              <div className="flex items-center space-x-6 text-sm">
-                <a href={`/${locale}/privacy-policy`} className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.privacyPolicy', locale)}
-                </a>
-                <a href={`/${locale}/terms-of-service`} className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.termsOfService', locale)}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer currentLocale={locale} />
     </div>
   );
 }

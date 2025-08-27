@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Simple internationalization function
 function t(key: string, locale: string = 'en') {
@@ -383,70 +384,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
-                  <Image
-                    src="/app-icon.svg"
-                    alt="MotifyUp App Icon"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
-                  />
-                </div>
-                <span className="text-2xl font-bold">MotifyUp</span>
-              </div>
-              <p className="text-gray-400">{t('footer.tagline', locale)}</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks', locale)}</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#features" className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.features', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href="#screenshots" className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.gallery', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href={`/${locale}/blog`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.blog', locale)}
-                  </a>
-                </li>
-                <li>
-                  <a href="#download" className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.download', locale)}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('footer.developer', locale)}</h3>
-              <p className="text-gray-400 mb-2">MetaLeap LLC</p>
-              <p className="text-gray-400 text-sm">{t('footer.designedFor', locale)}</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 mb-4 md:mb-0">{t('footer.copyright', locale)}</p>
-              <div className="flex items-center space-x-6 text-sm">
-                <a href={`/${locale}/privacy-policy`} className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.privacyPolicy', locale)}
-                </a>
-                <a href={`/${locale}/terms-of-service`} className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.termsOfService', locale)}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer currentLocale={locale} />
       {/* Floating right-side anchor for section shortcuts */}
       <nav className="hidden md:flex fixed right-6 top-1/3 z-40">
         <div className="flex flex-col gap-2 rounded-2xl border border-green-100 bg-white/70 backdrop-blur-md shadow-lg p-2">

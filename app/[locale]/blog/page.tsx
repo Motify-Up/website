@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // Localized metadata
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -132,6 +133,8 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
           </div>
         </div>
       </section>
+
+      <Footer currentLocale={locale} />
     </div>
   );
 }
