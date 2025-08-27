@@ -405,11 +405,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </a>
                 </li>
                 <li>
-                  <a href={`/${locale}/procrastination`} className="text-gray-400 hover:text-white transition-colors">
-                    {t('navigation.procrastination', locale)}
-                  </a>
-                </li>
-                <li>
                   <a href="#download" className="text-gray-400 hover:text-white transition-colors">
                     {t('navigation.download', locale)}
                   </a>
